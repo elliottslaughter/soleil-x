@@ -3782,6 +3782,7 @@ function IO.WriteConsoleOutput(timeStep)
                     string.format(" %11.6f",Flow.averageTemperature:get()),
                     string.format(" %11.6f",Flow.averageKineticEnergy:get()),
                     string.format(" %11.6f",particle_avg_temp),'\n')
+    io.stdout:flush()
                   
   end
 end
